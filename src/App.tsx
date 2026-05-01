@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 function App() {
   const [timeLeft, setTimeLeft] = useState<number>(300); 
+  const [taskTitle, setTaskTitle] = useState<string>('');
   const [selectedMinutes, setSelectedMinutes] = useState<number>(5);
   const [isTimerRunning, setIsTimerRunning] = useState<boolean>(false);
   const [mode, setMode] = useState<'work' | 'break'>('work');
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-900 text-white flex flex-col items-center justify-center p-4">
       <h1 className="text-4xl font-bold mb-8">Pomodoro Focus</h1>
-      
+      <input className="bg-slate-800 border border-slate-700 p-2 rounded mb-4 w-full max-w-md" type="text" />
       <div className="flex flex-col md:flex-row gap-10 items-center">
         
         <div className="flex flex-col items-center">
