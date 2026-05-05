@@ -18,8 +18,13 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-900 text-white flex flex-col items-center justify-center p-4">
       <h1 className="text-4xl font-bold mb-8">Pomodoro Focus</h1>
-      <input className="bg-slate-800 border border-slate-700 p-2 rounded mb-4 w-full max-w-md" type="text" value={taskTitle} onChange="(e: React.ChangeEvent<HTMLInputElement>) => setTaskTitle(e.target.value)"/>
-      <div className="flex flex-col md:flex-row gap-10 items-center">
+        <input 
+          className="bg-slate-800 border border-slate-700 p-2 rounded mb-4 w-full max-w-md" 
+          type="text" 
+          value={taskTitle} 
+          onChange={(e) => setTaskTitle(e.target.value)} 
+        />      
+        <div className="flex flex-col md:flex-row gap-10 items-center">
         
         <div className="flex flex-col items-center">
           <div className="w-64 h-64 border-8 border-red-500 rounded-full flex items-center justify-center mb-4">
