@@ -13,7 +13,6 @@ function App() {
   const [selectedMinutes, setSelectedMinutes] = useState<number>(5);
   const [isTimerRunning, setIsTimerRunning] = useState<boolean>(false);
   const [mode, setMode] = useState<'work' | 'break'>('work');
-  const [history, setHistory] = useState<CompletedTask[]>([]);
 
   return (
     <div className="min-h-screen bg-slate-900 text-white flex flex-col items-center justify-center p-4">
