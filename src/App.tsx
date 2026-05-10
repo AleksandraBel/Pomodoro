@@ -12,7 +12,6 @@ function App() {
   const [taskTitle, setTaskTitle] = useState<string>('');
   const [selectedMinutes, setSelectedMinutes] = useState<number>(5);
   const [isTimerRunning, setIsTimerRunning] = useState<boolean>(false);
-  const [mode, setMode] = useState<'work' | 'break'>('work');
   const [history, setHistory] = useState<CompletedTask[]>([]);
 
   return (
