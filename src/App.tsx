@@ -4,6 +4,7 @@ interface CompletedTask {
   id: string;
   title: string;
   minutes: number;
+  completedAt: Date;
 }
 
 function App() {
